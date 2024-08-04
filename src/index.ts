@@ -9,7 +9,7 @@ export const Config: Schema<Config> = Schema.object({})
 export function apply(ctx: Context) {
   ctx.on('message', (session) =>{
     if (session.content === 'test') {
-      session.send('成功')
+      session.send('成功！')
     }
   })
 }
